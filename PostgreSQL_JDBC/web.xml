@@ -1,0 +1,28 @@
+<!--
+File name : web.java
+Author    : Arun Rajan, 110921170
+
+Desc: Configuration File for the web application
+
+Pledge:
+
+I pledge my  honor that all parts of this project were done by me  alone and without collaboration with anybody else.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>DBMS</display-name>
+   <servlet>
+    <description></description>
+    <display-name>LogicController</display-name>
+    <servlet-name>LogicController</servlet-name>
+    <servlet-class>controllers.LogicController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogicController</servlet-name>
+    <url-pattern>/LogicController</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+  <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

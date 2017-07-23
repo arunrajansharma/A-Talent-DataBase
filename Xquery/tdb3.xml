@@ -1,0 +1,395 @@
+<!--
+Author : Arun Rajan, Stony Brook University
+I pledge my honor that all parts of this project were done by me alone and without collaboration with anybody else. -->
+<root xmlns="proj3ns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="proj3ns proj3Schema.xsd">
+    <shows>
+        <show>
+            <sid>s1</sid>
+            <sdate>2014-02-02</sdate>
+        </show>
+        <show>
+            <sid>s2</sid>
+            <sdate>2014-04-02</sdate>
+        </show>
+        <show>
+            <sid>s3</sid>
+            <sdate>2014-06-05</sdate>
+        </show>
+        <show>
+            <sid>s4</sid>
+            <sdate>2014-08-02</sdate>
+        </show>  
+        <show>
+            <sid>s5</sid>
+            <sdate>2014-06-05</sdate>
+        </show>
+    </shows>
+    <artworks>
+        <artwork>
+            <aid>a1</aid>
+            <aname>Barcarolle</aname>
+        </artwork>
+        <artwork>
+            <aid>a2</aid>
+            <aname>Giselle</aname>
+        </artwork>
+        <artwork>
+            <aid>a3</aid>
+            <aname>Bumblebee</aname>
+        </artwork>
+        <artwork>
+            <aid>a4</aid>
+            <aname>BesameMucho</aname>
+        </artwork>
+        <artwork>
+            <aid>a5</aid>
+            <aname>SwanLake</aname>
+        </artwork>
+        <artwork>
+            <aid>a6</aid>
+            <aname>Habanera</aname>
+        </artwork>
+    </artworks>
+    <judges>
+        <judge>
+            <jid>j1</jid>
+            <jname>Judy</jname>
+        </judge>
+        <judge>
+            <jid>j2</jid>
+            <jname>Lucy</jname>
+        </judge>
+        <judge>
+            <jid>j3</jid>
+            <jname>Irving</jname>
+        </judge>
+        <judge>
+            <jid>j4</jid>
+            <jname>Phil</jname>
+        </judge>
+        <judge>
+            <jid>j5</jid>
+            <jname>Oscar</jname>
+        </judge>
+    </judges>
+    <contestants>
+        <contestant>
+            <cid>c1</cid>
+            <cname>Joe</cname>
+            <auditions>
+                <audition>
+                    <sid>s1</sid>
+                    <aid>a1</aid>
+                    <scores>
+                        <score jid="j1" value="7"/>
+                        <score jid="j2" value="8"/>
+                        <score jid="j3" value="6"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s4</sid>
+                    <aid>a3</aid>
+                    <scores>
+                        <score jid="j2" value="7"/>
+                        <score jid="j5" value="6"/>
+                    </scores>
+                </audition>
+            </auditions>
+        </contestant>
+        <contestant>
+            <cid>c2</cid>
+            <cname>Bob</cname>
+            <auditions>
+                <audition>
+                    <sid>s2</sid>
+                    <aid>a5</aid>
+                    <scores>
+                        <score jid="j1" value="8"/>
+                        <score jid="j4" value="6"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s3</sid>
+                    <aid>a3</aid>
+                    <scores>
+                        <score jid="j3" value="8"/>
+                        <score jid="j4" value="7"/>
+                        <score jid="j5" value="9"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s4</sid>
+                    <aid>a1</aid>
+                    <scores>
+                        <score jid="j2" value="6"/>
+                        <score jid="j5" value="8"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s5</sid>
+                    <aid>a5</aid>
+                    <scores>
+                        <score jid="j2" value="3"/>
+                        <score jid="j3" value="5"/>
+                        <score jid="j4" value="6"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s5</sid>
+                    <aid>a2</aid>
+                    <scores>
+                        <score jid="j2" value="4"/>
+                        <score jid="j3" value="6"/>
+                        <score jid="j4" value="8"/>
+                    </scores>
+                </audition>
+            </auditions>
+        </contestant>
+        <contestant>
+            <cid>c3</cid>
+            <cname>Mary</cname>
+            <auditions>
+                <audition>
+                    <sid>s1</sid>
+                    <aid>a1</aid>
+                    <scores>
+                        <score jid="j1" value="5"/>
+                        <score jid="j2" value="6"/>
+                        <score jid="j3" value="6"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s1</sid>
+                    <aid>a2</aid>
+                    <scores>
+                        <score jid="j1" value="9"/>
+                        <score jid="j2" value="6"/>
+                        <score jid="j3" value="8"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s2</sid>
+                    <aid>a6</aid>
+                    <scores>
+                        <score jid="j1" value="3"/>
+                        <score jid="j4" value="5"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s2</sid>
+                    <aid>a4</aid>
+                    <scores>
+                        <score jid="j1" value="9"/>
+                        <score jid="j4" value="10"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s5</sid>
+                    <aid>a1</aid>
+                    <scores>
+                        <score jid="j2" value="5"/>
+                        <score jid="j3" value="7"/>
+                        <score jid="j4" value="10"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s5</sid>
+                    <aid>a4</aid>
+                    <scores>
+                        <score jid="j2" value="6"/>
+                        <score jid="j3" value="8"/>
+                        <score jid="j4" value="7"/>
+                    </scores>
+                </audition>
+            </auditions>
+        </contestant>
+        <contestant>
+            <cid>c4</cid>
+            <cname>Ann</cname>
+            <auditions>
+                <audition>
+                    <sid>s2</sid>
+                    <aid>a6</aid>
+                    <scores>
+                        <score jid="j1" value="7"/>
+                        <score jid="j4" value="6"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s3</sid>
+                    <aid>a4</aid>
+                    <scores>
+                        <score jid="j3" value="7"/>
+                        <score jid="j4" value="6"/>
+                        <score jid="j5" value="4"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s4</sid>
+                    <aid>a4</aid>
+                    <scores>
+                        <score jid="j2" value="9"/>
+                        <score jid="j5" value="8"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s5</sid>
+                    <aid>a4</aid>
+                    <scores>
+                        <score jid="j2" value="7"/>
+                        <score jid="j3" value="9"/>
+                        <score jid="j4" value="6"/>
+                    </scores>
+                </audition>
+            </auditions>
+        </contestant>
+        <contestant>
+            <cid>c5</cid>
+            <cname>Bess</cname>
+            <auditions>
+                <audition>
+                    <sid>s1</sid>
+                    <aid>a4</aid>
+                    <scores>
+                        <score jid="j1" value="4"/>
+                        <score jid="j2" value="5"/>
+                        <score jid="j3" value="6"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s2</sid>
+                    <aid>a2</aid>
+                    <scores>
+                        <score jid="j1" value="8"/>
+                        <score jid="j4" value="7"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s3</sid>
+                    <aid>a5</aid>
+                    <scores>
+                        <score jid="j3" value="6"/>
+                        <score jid="j4" value="8"/>
+                        <score jid="j5" value="7"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s5</sid>
+                    <aid>a4</aid>
+                    <scores>
+                        <score jid="j2" value="9"/>
+                        <score jid="j3" value="8"/>
+                        <score jid="j4" value="8"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s5</sid>
+                    <aid>a6</aid>
+                    <scores>
+                        <score jid="j2" value="8"/>
+                        <score jid="j3" value="7"/>
+                        <score jid="j4" value="10"/>
+                    </scores>
+                </audition>
+            </auditions>
+        </contestant>
+        <contestant>
+            <cid>c6</cid>
+            <cname>Tom</cname>
+            <auditions>
+                <audition>
+                    <sid>s2</sid>
+                    <aid>a4</aid>
+                    <scores>
+                        <score jid="j1" value="5"/>
+                        <score jid="j4" value="5"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s2</sid>
+                    <aid>a3</aid>
+                    <scores>
+                        <score jid="j1" value="7"/>
+                        <score jid="j4" value="6"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s3</sid>
+                    <aid>a1</aid>
+                    <scores>
+                        <score jid="j3" value="9"/>
+                        <score jid="j4" value="7"/>
+                        <score jid="j5" value="6"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s4</sid>
+                    <aid>a3</aid>
+                    <scores>
+                        <score jid="j2" value="8"/>
+                        <score jid="j5" value="10"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s4</sid>
+                    <aid>a1</aid>
+                    <scores>
+                        <score jid="j2" value="5"/>
+                        <score jid="j5" value="5"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s5</sid>
+                    <aid>a3</aid>
+                    <scores>
+                        <score jid="j2" value="6"/>
+                        <score jid="j3" value="6"/>
+                        <score jid="j4" value="8"/>
+                    </scores>
+                </audition>
+            </auditions>
+        </contestant>
+        <contestant>
+            <cid>c7</cid>
+            <cname>Don</cname>
+            <auditions>
+                <audition>
+                    <sid>s1</sid>
+                    <aid>a4</aid>
+                    <scores>
+                        <score jid="j1" value="9"/>
+                        <score jid="j2" value="9"/>
+                        <score jid="j3" value="7"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s1</sid>
+                    <aid>a5</aid>
+                    <scores>
+                        <score jid="j1" value="7"/>
+                        <score jid="j2" value="7"/>
+                        <score jid="j3" value="10"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s3</sid>
+                    <aid>a2</aid>
+                    <scores>
+                        <score jid="j3" value="8"/>
+                        <score jid="j4" value="6"/>
+                        <score jid="j5" value="9"/>
+                    </scores>
+                </audition>
+                <audition>
+                    <sid>s5</sid>
+                    <aid>a3</aid>
+                    <scores>
+                        <score jid="j2" value="5"/>
+                        <score jid="j3" value="8"/>
+                        <score jid="j4" value="7"/>
+                    </scores>
+                </audition>
+            </auditions>
+        </contestant>
+    </contestants>
+</root>

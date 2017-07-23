@@ -1,0 +1,94 @@
+<!--
+Author : Arun Rajan, Stony Brook University
+I pledge my honor that all parts of this project were done by me alone and without collaboration with anybody else. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="proj3ns" elementFormDefault="qualified">
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+            <xs:element name="shows">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="show" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="sid" type="xs:ID"/>
+                                    <xs:element name="sdate" type="xs:date"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="artworks">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="artwork" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="aid" type="xs:ID"/>
+                                    <xs:element name="aname" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="judges">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="judge" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="jid" type="xs:ID"/>
+                                    <xs:element name="jname" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="contestants">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="contestant" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="cid" type="xs:ID"/>
+                                    <xs:element name="cname" type="xs:string"/>
+                                    <xs:element name="auditions">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="audition" maxOccurs="unbounded">
+                                                 <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element name="sid" type="xs:IDREF"/>
+                                                        <xs:element name="aid" type="xs:IDREF"/>
+                                                        <xs:element name="scores">
+                                                            <xs:complexType>
+                                                                <xs:sequence>
+                                                                    <xs:element name="score" maxOccurs="unbounded">
+                                                                        <xs:complexType>
+                                                                            <xs:attribute name="jid" type="xs:IDREF" use="required"/>
+                                                                            <xs:attribute name="value" type="xs:int" use="required"/>
+                                                                        </xs:complexType>
+                                                                    </xs:element>
+                                                                </xs:sequence>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                 </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
